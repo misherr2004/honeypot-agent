@@ -1,0 +1,14 @@
+# Binary
+/agent
+/agent.exe
+
+# Go
+*.test
+*.out
+/vendor/
+
+# OS / IDE
+.DS_Store
+.idea/
+*.swp
+*.swo
