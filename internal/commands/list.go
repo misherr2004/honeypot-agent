@@ -20,9 +20,9 @@ func RunList(args []string, app *App) error {
 		return fmt.Errorf("list tokens: %w", err)
 	}
 	home := ""
-	if app != nil {
-		home = app.Home
-	}
+
+	home := app.Home
+	
 	fmt.Printf("%-4s %-16s %-10s %-36s %-12s %-22s %-22s\n",
 		"ID", "NAME", "TYPE", "PATH", "STATUS", "PLACED AT", "CHECKED AT")
 	for _, r := range rows {
